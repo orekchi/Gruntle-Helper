@@ -9,11 +9,16 @@
     <title>Kivy.Helper</title>
 </head>
 <body>
-    <a href="/">main page</a>
+    <a href="{% url 'mainpageapp:index' %}">Main Page</a>
+
     <div class="header">
         <h1>Kivy</h1>
     </div>
-    {% for article in all_articles %}
+    <form action="{% url 'kivyapp:index' %}" method="get">
+        <input type="text" name="search" placeholder="search">
+        <button type="submit">Search</button>
+    </form>
+    {% for article in articles %}
         <div class="article_frame">
             <div class="article_text">
                 <span class="article_title"> {{article.title}}</span>

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'pythonapp',
     'pygmentify',
     'ckeditor',
+    'taggit',
 
 ]
 
