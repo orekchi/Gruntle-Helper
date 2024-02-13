@@ -34,4 +34,10 @@ body {
 .code_frame {
     background-color: rgba(0,0,0,0.2);
     padding: 4px;
+
+}
+
+code {
+    background-color: rgba(0,0,0,0.3);
+    color: #eb9854
 }
