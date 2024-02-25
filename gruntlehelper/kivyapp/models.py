@@ -7,6 +7,7 @@ from ckeditor.fields import RichTextField
 class Article(models.Model):
     title = models.CharField(max_length=200)
     content = RichTextField(max_length=4000)
+    # TODO remove code example?
     code_example = RichTextField(max_length=4000)
     category = models.CharField(max_length=100)
 

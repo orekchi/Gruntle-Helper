@@ -37,7 +37,17 @@ body {
 
 }
 
-code {
+code.language-python ,.language-apache {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
     background-color: rgba(0,0,0,0.3);
     color: #eb9854
+}
+code.language-apache {
+        color: #97baab;
+        )
+
+
 }

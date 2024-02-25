@@ -35,3 +35,10 @@ body {
     background-color: rgba(0,0,0,0.2);
     padding: 4px;
 }
+
+
+
+.contain_content {
+    max-width: 100%;
+    height: auto !important;
+}
