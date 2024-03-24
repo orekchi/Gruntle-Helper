@@ -26,6 +26,8 @@ urlpatterns = [
     path('django/', include('djangoapp.urls')),
     path("ckeditor5/", include('django_ckeditor_5.urls')),
     path("ckeditor/", include("ckeditor_uploader.urls")),
+    path('python/', include('pythonapp.urls')),
+    path('bitcoin/', include('bitcoinapp.urls')),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

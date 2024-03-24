@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'taggit',
     'django_editorjs',
     'django_ckeditor_5',
+    'bitcoinapp',
 
 ]
 
@@ -319,6 +320,11 @@ CKEDITOR_CONFIGS = {
         ),
     },
 }
+
+# changing default port so that i can run 2 instances of django at the same time
+
+from django.core.management.commands.runserver import Command as runserver
+runserver.default_port = "8001"
 
 
 

@@ -13,7 +13,7 @@ def index(request):
         articles = Article.objects.filter(title__icontains=search)
     else:
         articles = Article.objects.all()
-    return render(request, 'pythonapp/index.html', {'articles': articles})
+    return render(request, 'bitcoinapp/index.html', {'articles': articles})
 
 
 from django.shortcuts import render

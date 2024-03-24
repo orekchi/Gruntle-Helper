@@ -6,16 +6,17 @@
         <meta charset="UTF-8">
          <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Django Helper</title>
-        <link rel="stylesheet"   href="{% static 'djangoapp/style.css' %}">
+        <title>Python Helper</title>
+        <link rel="stylesheet"   href="{% static 'pythonapp/style.css' %}">
         <link rel="stylesheet" href="{% pygmentify_css style='monokai' %}">
-        <title>Kivy.Helper</title>
+        <title>Python.Helper</title>
     </head>
     <body>
+    <a href="{% url 'mainpageapp:index' %}">Main Page</a>
     <div class="header">
-            <h1>Django</h1>
+            <h1>Python</h1>
         </div>
-        <form action="{% url 'djangoapp:index' %}" method="get">
+        <form action="{% url 'pythonapp:index' %}" method="get">
             <input type="text" name="search" placeholder="search">
             <button type="submit">Search</button>
         {% block forms %}
@@ -46,7 +47,7 @@
         <script>hljs.initHighlightingOnLoad();</script>
 
         {% endblock ckeditor %}
-        <a href="{% url 'mainpageapp:index' %}">Main Page</a>
+
 
 
         </form>
