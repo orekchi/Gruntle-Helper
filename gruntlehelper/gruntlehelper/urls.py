@@ -28,6 +28,7 @@ urlpatterns = [
     path("ckeditor/", include("ckeditor_uploader.urls")),
     path('python/', include('pythonapp.urls')),
     path('bitcoin/', include('bitcoinapp.urls')),
+    path('linux/', include ('linuxapp.urls')),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

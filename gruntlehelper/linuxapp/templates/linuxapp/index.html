@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- Base.html is located in kivyapp/templates/base.html. this should be base for all of them.-->
+
+
+
+
+<!-- style link with custom css for this app -->
+{% block style %}
+<link rel="stylesheet"   href="{% static 'linuxapp/style.css' %}">
+{% endblock %}
+<!-- end of style link with custom css for this app -->
+
+<!-- custom title -->
+{% block title %}Linux Helper {% endblock %}
+<!-- end of custom title -->
+
+<!-- custom header -->
+{% block header %}Linux {% endblock %}
+<!-- end of custom header -->
+
+<!-- custom search reverse url -->
+{% block search %}
+<form action="{% url 'linuxapp:index' %}" method="get">
+{% endblock %}
+<!-- end of custom search reverse url -->
+
+
+
