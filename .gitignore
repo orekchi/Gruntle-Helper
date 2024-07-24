@@ -1,0 +1,10 @@
+gruntlehelper/static/admin/js
+gruntlehelper/bitcoinapp/__pycache__
+gruntlehelper/linuxapp/__pycache__
+gruntlehelper/kivyapp/__pycache__
+gruntlehelper/pythonapp/__pycache__
+gruntlehelper/mainpageapp/__pycache__
+gruntlehelper/djangoapp/__pycache__
+gruntlehelper/gruntlehelper/__pycache__
+gruntlehelper/static
+gruntlehelper/venv
