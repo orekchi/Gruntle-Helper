@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'django_editorjs',
     'django_ckeditor_5',
     'bitcoinapp',
+    'dockerapp',
 
 ]
 

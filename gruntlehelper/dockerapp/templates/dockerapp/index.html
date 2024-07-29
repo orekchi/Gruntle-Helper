@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- Base.html is located in kivyapp/templates/base.html. this should be base for all of them.-->
+
+
+
+
+<!-- style link with custom css for this app -->
+{% block style %}
+<link rel="stylesheet"   href="{% static 'dockerapp/style.css' %}">
+{% endblock %}
+<!-- end of style link with custom css for this app -->
+
+<!-- custom title -->
+{% block title %}Docker Helper {% endblock %}
+<!-- end of custom title -->
+
+<!-- custom header -->
+{% block header %}Docker {% endblock %}
+<!-- end of custom header -->
+
+<!-- custom search reverse url -->
+{% block search %}
+<form action="{% url 'dockerapp:index' %}" method="get">
+{% endblock %}
+<!-- end of custom search reverse url -->
+
+
+

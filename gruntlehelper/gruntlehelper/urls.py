@@ -29,6 +29,7 @@ urlpatterns = [
     path('python/', include('pythonapp.urls')),
     path('bitcoin/', include('bitcoinapp.urls')),
     path('linux/', include ('linuxapp.urls')),
+    path('docker/', include ('dockerapp.urls')),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
