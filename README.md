@@ -25,9 +25,9 @@ uv run manage.py runserver
 ```
 
 4. go to the browser and type:
-   ```bash
-   localhost:8001
-   ```
+```bash
+localhost:8001
+```
 
    
 
