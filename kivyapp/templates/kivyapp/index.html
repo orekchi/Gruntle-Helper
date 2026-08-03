@@ -1,0 +1,40 @@
+{% load static %}
+{% load pygmentify_tags %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"   href="{% static 'kivyapp/style.css' %}">
+    <link rel="stylesheet" href="{% pygmentify_css style='monokai' %}">
+    <title>Kivy.Helper</title>
+</head>
+<body>
+    <a href="{% url 'mainpageapp:index' %}">Main Page</a>
+
+    <div class="header">
+        <h1>Kivy</h1>
+    </div>
+    <form action="{% url 'kivyapp:index' %}" method="get">
+        <input type="text" name="search" placeholder="search">
+        <button type="submit">Search</button>
+    </form>
+    {% for article in articles %}
+        <div class="article_frame">
+            <div class="article_text">
+                <span class="article_title"> {{article.title}}</span>
+                <span class="article_category"> ({{article.category}})</span>
+                <br><br>
+                <span class="article_content"> {{article.content | safe }}</span>
+            </div>
+           <!-- <div class="code_frame">
+                {% pygmentify %}
+                <pre class="python">
+                 {{article.code_example | safe }}
+                </pre>
+                {% endpygmentify %} -->
+
+            </div>
+        </div>
+    {% endfor %}
+</body>
+</html>

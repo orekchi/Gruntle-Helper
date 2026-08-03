@@ -1,0 +1,23 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"   href="{% static 'mainpageapp/style.css' %}">
+    <title>Gruntle Main Page</title>
+</head>
+<body>
+    <div>
+        <h1>Gruntle.Helper</h1>
+        <div class="white_box">
+            <h3>Collected resources:</h3>
+        </div>
+    </div>
+    <br><br>
+    {% for resource in resource %}
+        <div class="list_of_resources">
+            <a href="{{ resource.url }}"><span class="resource_text">{{ resource.name }}</span></a>
+    {% endfor %}
+        </div>
+</body>
+</html>
